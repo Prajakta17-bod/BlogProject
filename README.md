@@ -21,3 +21,6 @@ HTML, CSS, Bootstrap (for responsive design)
 *  Database :
    SQLite
 
+## Snapshots
+ * Homepage
+   

@@ -23,4 +23,4 @@ HTML, CSS, Bootstrap (for responsive design)
 
 ## Snapshots
   ### Homepage
-   
+   ![login](https://github.com/Prajakta17-bod/BlogProject/blob/38eca27df906912ee305e6eb25c2e5131a6bf14c/Screenshot/loginpage%20(2).png)

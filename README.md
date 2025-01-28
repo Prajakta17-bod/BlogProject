@@ -11,6 +11,10 @@ Blog It Up is a web application that enables users to create, manage, and intera
   * Sign out of the app.
 * Blog Post Management:
   * Create, edit, and delete blog posts with ease.
+* Contact Us:
+  * Users can contact the team for inquiries or support using the Contact Us page.
+  * The form accepts a name, email, and message.
+  * After submitting the form, the information is sent directly to the admin or stored for later follow-up.
 
 
 ## Technology Stack

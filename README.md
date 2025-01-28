@@ -33,6 +33,6 @@ HTML, CSS, Bootstrap (for responsive design)
   ### Signup
   ![signup](https://github.com/Prajakta17-bod/BlogProject/blob/d9c99096a506648313543cf924db4022180f7c7f/Screenshot/signup%20(2).png)
   ### Blog-post
-  ![blogpost] 
+  ![blogpost](https://github.com/Prajakta17-bod/BlogProject/blob/d7bac653e627e151873bf32eda61aec66dc99e43/Screenshot/127.0.0.1_8000_blog_detail_discover-the-worlds-best-kept-secrets-hidden-travel-destinations-2025-01-07(iPad%20Pro).png)
   ### User-Profile
   ![profile]

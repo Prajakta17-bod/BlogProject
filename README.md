@@ -23,4 +23,4 @@ HTML, CSS, Bootstrap (for responsive design)
 
 ## Snapshots
  * Homepage
-   
+   ![alt text}(screenshots/blog (2).jpg)

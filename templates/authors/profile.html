@@ -1,0 +1,81 @@
+{% extends  "main/base.html"  %}
+{% load humanize %}
+
+{% block content %}
+    
+<h2 class="fw-bolder"> Hello,<span class="text-primary">{{user.username}}</span></h2>
+
+<div class="card">
+  <div class="card-body text-center">
+    {% if user_profile_data.profile_image %}
+    <img class="rounded" src="{{user_profile_data.profile_image.url}}"  alt="{{user.username}}'s profile image" width="10%" height="10%">
+    {% else %}
+       <img class="rounded" src="https://www.w3schools.com/howto/img_avatar.png" alt="{{user.username}}'s profile image" width="10%" height="10%">
+    {% endif %}
+
+
+    <h3 class="fs-1 fw-bolder"> {{user.first_name}}  {{user.last_name}} (@{{user.username}})</h3>
+
+    
+      <p>{{user_profile_data.bio}}</p>
+    
+      
+
+    <div class="fs-4">
+      {% if user_profile_data.location %}
+      <span class="me-2"><i class="fa-solid fa-location-pin text-primary"></i>{{user_profile_data.location}}</span>
+      {%endif %}
+
+      {% if user_profile_data.dob %}
+      <span class="me-2"><i class="fa-solid fa-cake-candles text-primary"></i>{{user_profile_data.dob}}</span>
+      {%endif %}
+
+      {% if user.email %}
+      <span class="me-3"><i class="fa-solid fa-envelope text-primary"></i>{{user.email}}</span>
+      {%endif %}
+
+      {% if user_profile_data.website %}
+         <a  class="me-2" href="{{user_profile_data.website}}">
+         <i class="fa-solid fa-earth-americas"></i>{{user_profile_data.website}}</a>
+      {% endif %}
+
+      
+      <span class="me-2" ><i class="fa-brands fa-twitter"></i>{{user_profile_data.twitter}}</span>
+    </div>
+ </div>
+</div>
+
+     <h3> MY POSTS</h3>
+    
+    {% for post_data in user_related_data %}
+    <div class="card mt-1">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">      
+            <div  class="row">
+                <div class="col-md-6">
+                <p>{{post_data.name}}</p>   
+            </div>
+            <div class="col-md-6">
+                <p class="text-end"><i class="fa-solid fa-clock"></i>{{post_data.post_date|timesince}}</p> 
+            </div>
+          </div>
+
+            <footer class="blockquote-footer">{{post_data.description | striptags |truncatewords:20 |safe}}</footer>
+          </blockquote>
+        </div>
+
+
+        <div class="card-footer">
+            <a class="btn btn-sm btn-primary" href="{% url 'blog_detail' post_data.slug %}"> <i class="fa-brands fa-readme"></i>Read Blog</a>
+            <a class="btn btn-sm btn-info" href="{% url 'UpdateBlogView' post_data.id %}"> <i class="fa-solid fa-pen-to-square"></i>Edit Blog</a>
+            <a class="btn btn-sm btn-danger" href="{% url 'DeleteBlogView' post_data.id %}"><i class="fa-solid fa-trash"></i>Delete Blog</a>
+
+          </div>
+      </div>
+    
+
+    
+    {% endfor %}
+    
+    
+ {% endblock content %}

@@ -1,0 +1,15 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+
+<body style="background: url('https://png.pngtree.com/thumb_back/fh260/background/20201101/pngtree-scene-with-geometrical-forms-the-poster-model-minimal-background-render-image_452981.jpg')
+no-repeat center center fixed ; background-size: cover;">
+<h1> LOGIN</h1>
+<form method="post">
+ {% csrf_token %}
+ {{login_form.as_p}}
+
+    <button type="submit" class="btn btn-primary mt-3"> Login</button>
+</form>
+
+{% endblock content %}

@@ -1,0 +1,40 @@
+{% extends "main/base.html" %} {% block content %}
+
+<h1>Register</h1>
+
+<body style="background: url('https://cms.involve.me/templates/registration-form-2024.png')
+no-repeat center center fixed ; background-size: cover;">
+<form method="post">
+  {% csrf_token %}
+<div class="row">
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="fname" class="form-label">First Name</label>
+      {{form.first_name}}
+    </div>
+    <div class="col-md-6">
+      <label for="lname" class="form-label">Last Name</label>
+      {{form.last_name}}
+    </div>
+    <div class="col-6">
+      <label for="username" class="form-label">Username</label>
+        {{form.username}}
+    </div>
+    <div class="col-6">
+      <label for="email" class="form-label">E-mail</label>
+        {{form.email}}
+    </div>
+    <div class="col-12">
+      <label for="password" class="form-label">password</label>
+        {{form.password1}}
+    </div>
+    <div class="col-12">
+      <label for="confirm password" class="form-label"> confirm password</label>
+        {{form.password2}}
+    </div>
+    
+  </div>
+  <button type="submit"  class="btn btn btn-primary mt-3">create user</button>
+  </form>
+
+{% endblock content %}

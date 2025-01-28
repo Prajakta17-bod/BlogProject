@@ -1,0 +1,70 @@
+{% extends "main/base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Edit profile {% endblock title %}
+
+{% block content %}
+<h2> Update,{{user.username}}</h2>
+
+<div class="row">
+    <div class="col-md-3">
+        {% include 'containers/_sideNavbar.html' %}    
+    </div>
+
+    <div class="col-md-9">
+       <form method="post">
+         {% csrf_token %}
+        
+ 
+ 
+        <div class="card">
+            <div class="card-header">
+                <h2> General Info</h2>
+            </div>
+            <div class="card-body">
+                <div class="col">
+                    {{form.user}}
+                </div>
+                <div class="col">
+                    {{form.bio|as_crispy_field }}
+                </div>
+                <div class="row">
+                <div class="col">
+                        {{form.location |as_crispy_field}}
+                </div>                    
+                    <div class="col">
+                        {{form.dob |as_crispy_field}}
+                    </div>
+                    <div>
+                        {{form.profile_image |as_crispy_field}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-2">
+            <div class="card-header">
+             <h2>Social Links</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                  {{form.website |as_crispy_field }}
+                  </div>
+             
+                 <div>
+                  {{form.twitter |as_crispy_field}}
+                 </div> 
+                </div>
+            </div>
+        </div> 
+
+
+          
+       <br>
+       <button class="btn btn-lg btn-success" type="submit">Update user</button>
+       </form>
+    </div>
+      
+</div>
+{% endblock content %}

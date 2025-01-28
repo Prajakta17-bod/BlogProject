@@ -23,4 +23,4 @@ HTML, CSS, Bootstrap (for responsive design)
 
 ## Snapshots
  * Homepage
-   ![alt text] (screenshots/blog (2).jpg)
+   ![alt text] (https://github.com/Prajakta17-bod/BlogProject/blob/89475a63e015bf7cbbb5357874fe78877874d1cb/screenshots/blog%20(2).jpg)

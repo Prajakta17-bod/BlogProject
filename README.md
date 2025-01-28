@@ -30,3 +30,7 @@ HTML, CSS, Bootstrap (for responsive design)
    ![homepage](https://github.com/Prajakta17-bod/BlogProject/blob/5168c88289462ca2933518db26dde2c22967cdc3/Screenshot/blog%20(2).jpg)
   ### Login
   ![login](https://github.com/Prajakta17-bod/BlogProject/blob/3a0fb5b78a75ee04047c376ee4573eb3143d8f08/Screenshot/loginpage%20(2).png)
+  ### Signup
+  ![signup](https://github.com/Prajakta17-bod/BlogProject/blob/d9c99096a506648313543cf924db4022180f7c7f/Screenshot/signup%20(2).png)
+  ### Blog-post
+  ![blogpost]

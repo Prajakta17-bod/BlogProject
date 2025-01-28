@@ -5,7 +5,18 @@ Blog It Up is a web application that enables users to create, manage, and intera
  * Dynamic Navbar:
  * If not logged in, the navbar displays login and sign-up options.
  * Once logged in, the navbar displays a dropdown with the logged-in user’s username.
- *User Profile: The user can access their profile from the dropdown and:
- *View and edit their profile settings.
-*Create and manage blog posts.
-*Sign out from the application.
+ * User Profile: The user can access their profile from the dropdown and:
+ * View and edit their profile settings.
+* Create and manage blog posts.
+*  Sign out from the application. 
+ * Create and manage blog posts.
+ * Sign out from the application.
+
+## Technology Stack
+ * Frontend:
+HTML, CSS, Bootstrap (for responsive design)
+* Backend :
+  Python, Django (for backend logic and server-side operations)
+*  Database :
+   SQLite
+

@@ -36,3 +36,11 @@ HTML, CSS, Bootstrap (for responsive design)
   ![blogpost](https://github.com/Prajakta17-bod/BlogProject/blob/d7bac653e627e151873bf32eda61aec66dc99e43/Screenshot/127.0.0.1_8000_blog_detail_discover-the-worlds-best-kept-secrets-hidden-travel-destinations-2025-01-07(iPad%20Pro).png)
   ### User-Profile
   ![profile](https://github.com/Prajakta17-bod/BlogProject/blob/4e84c95f4a103fb80973e747ccaeca790032e661/Screenshot/user-profile%20(2).png)
+
+## Steps to rub the project 
+1. Clone the repository
+2. Install dependencies using pip install -r requirements.txt
+3. Type source env/bin/activate
+4. Run ther server using command python manage.py makemigrations
+5. Then run the server using python manage.py migrate
+6. Finally run thr server using python manage.py runserver
